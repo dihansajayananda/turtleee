@@ -1,0 +1,206 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+     scroll-behavior: smooth;
+}
+body {
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #CAF0F8;
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+
+.logo video {
+	height: 5rem;
+	width: 5rem;
+}
+
+nav {
+	margin-left: auto;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+}
+
+nav li {
+	margin-left: 20px;
+}
+
+nav a {
+	color: #000000;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+nav a:hover {
+	color: #3300ff;
+	background-color: #CAF0F8;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+nav ul ul {
+	display: none;
+	position: absolute;
+	background-color: #CAF0F8;
+	color: #000000;
+	padding: 10px;
+}
+
+nav ul li:hover > ul {
+	display: block;
+}
+
+nav li {
+	display: inline;
+	margin-right: 10px;
+}
+
+section.banner {
+	position: relative;
+	height: 400px;
+	background-color: #CAF0F8;
+}
+
+section.banner img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    
+}
+
+.banner {
+	width: 100%;
+	height: 500px;
+}
+
+.banner-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	text-align: center;
+}
+
+.banner-text h1 {
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+
+section {
+	margin-bottom: 20px solid;
+	text-align: left;
+	line-height: 1.5;
+	
+}
+
+.images {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+    
+}
+
+.images img {
+	width: 300px;
+	height: auto;
+	margin: 0 10px;
+    
+}
+
+h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+    
+}
+
+p {
+	font-size: 16px;
+	line-height: 1.5;
+	padding: 3rem;
+    text-align: justify;
+	background-color: #4dbfec;
+}
+
+.other-images {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+    
+}
+
+.other-images img {
+	width: 700px;
+	height: 450px;
+	margin: 10px;
+	border-radius: 4px;
+}
+
+section {
+	margin-bottom: 20px;
+    background-color: #4dbfec   ;
+}
+
+h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+    
+}
+
+p {
+	font-size: 16px;
+	line-height: 1.5;
+    
+}
+
+footer {
+	background-color: #0077b6;
+	
+	padding: 10px;
+	color: #fff;
+	text-align: center;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+	/* Styles for mobile layout */
+	section.banner {
+		height: 200px;
+	}
+
+	.banner-text h1 {
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+
+	.images img {
+		width: 100%;
+		margin: 10px 0;
+	}
+
+	.other-images img {
+		width: 100%;
+		margin: 10px 0;
+	}
+	footer li {
+		margin-left: 10px;
+	}
+
+	footer a {
+		font-size: 14px;
+	}
+}

@@ -1,0 +1,211 @@
+/* Default styles for all screen sizes */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Global Styles */
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+	background-color: #CAF0F8;
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+
+.logo video {
+	height: 5rem;
+	width: 5rem;
+}
+
+nav {
+	margin-left: auto;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+}
+
+nav li {
+	margin-left: 20px;
+}
+
+nav a {
+	color: #000000;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+nav a:hover {
+	color: #3300ff;
+	background-color: #CAF0F8;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+nav ul ul {
+	display: none;
+	position: absolute;
+	background-color: #CAF0F8;
+	color: #000000;
+	padding: 10px;
+}
+
+nav ul li:hover > ul {
+	display: block;
+}
+
+nav li {
+	display: inline;
+	margin-right: 10px;
+}
+
+/* Ticket Details Styles */
+.buy {
+	width: 70%;
+	height: 50%;
+	box-sizing: border-box;
+}
+
+.buy .tickets {
+	color: rgb(0, 4, 8);
+	background-color: #CAF0F8;
+	padding: 40px;
+	transition: .5s;
+	font-size: 40px;
+}
+
+.increment {
+	width: 3%;
+	background-color: rgb(0, 174, 255);
+}
+
+.decrement {
+	width: 3%;
+	background-color: rgb(255, 0, 25);
+}
+
+/* Heading Styles */
+.Heading {
+	text-align: center;
+	font-size: 55px;
+	color: white;
+	background-color: #0077b6;
+	font-style: italic;
+}
+
+/* Category Styles */
+.category {
+	font-size: 20px;
+	color: black;
+}
+
+/* Form Styles */
+
+.details-form {
+    background-color: #CAF0F8;
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  .details-form h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  
+  .details-form label {
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .details-form input,
+  .details-form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .details-form button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0074D9;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .details-form button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .details-form button:hover {
+    background-color: #0056b3;
+  }
+  
+
+/* Summary Table Styles */
+#summary h2 {
+	margin-top: 20px;
+	font-size: 35px;
+}
+
+#summary table {
+	font-size: 20px;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#summary th,
+#summary td {
+	border: 1px solid #000000;
+	padding: 8px;
+	text-align: left;
+}
+
+#summary th {
+	background-color: #010101;
+	color: white;
+}
+
+/* Continue Button Styles */
+#continueButton {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #0074D9;
+	color: white;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+}
+
+#continueButton:hover {
+	background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+	background-color: #0077b6;
+	padding: 10px;
+	color: #fff;
+	text-align: center;
+}
